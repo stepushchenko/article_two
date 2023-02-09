@@ -24,7 +24,7 @@ class IndexPage:
 
     @qase.step(
         action='Check the text in the Google Search button',
-        expected_result='The test is equal Google Search'
+        expected_result='The text is equal to Google Search'
     )
     def get_text_from_google_search_button(self, page: Page) -> None:
         return page.locator(self._BUTTON_GOOGLE_SEARCH).get_attribute('value')

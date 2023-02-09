@@ -23,9 +23,6 @@ class Docs:
             'steps': [],
             'automation': 2
         }
-        for attr in config.qase.CASE_PARAMS:
-            if hasattr(request.node.get_closest_marker(attr), 'args'):
-                result[attr] = request.node.get_closest_marker(attr).args[0]
         return result
 
     def create_database(self, request) -> bool:

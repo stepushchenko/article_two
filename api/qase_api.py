@@ -14,7 +14,6 @@ class QaseApi:
     @staticmethod
     def check_response(response) -> bool:
         json_response = response.json()
-        print(json_response)
         if response.status_code != 200 or not json_response['status']:
             return False
         else:
