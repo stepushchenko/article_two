@@ -9,5 +9,3 @@ class Qase:
     FRONTEND_DOMAIN = 'https://app.qase.io'
     API_VERSION = 'v1'
     PROJECT = 'GS'
-
-
